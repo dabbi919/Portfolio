@@ -273,6 +273,7 @@ body {
 @media all and (min-width: 768px) and (max-width: 1199px) {
   .container {
     padding-top: 25px;
+    transition: .2s;
   }
   
   .swiper {
@@ -303,12 +304,17 @@ body {
     width: 330px;
     height: 200px;
   }
+
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none;
+  }
 }
 
 /* 모바일 (해상도 360px ~ 767px)*/ 
 @media all and (min-width:360px) and (max-width:767px) {
   .container {
     padding-top: 10px;
+    transition: .2s;
   }
 
   .swiper {
@@ -316,7 +322,8 @@ body {
   }
 
   .slide-wrap {
-    max-width: 600px;
+    max-width: 400px;
+    height: auto;
   }
 
   .skills-wrap {
@@ -327,6 +334,7 @@ body {
     grid-template-columns: 2fr 2fr;
     place-items: center;
     padding: 10px;
+    margin-top: 50px;
   }
 
   .skills-wrap p {
@@ -344,15 +352,22 @@ body {
   }
 
   .projects-wrap {
-    width: 450px;
-    height: 530px;
+    width: 360px;
+    max-width: 360px;
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 10px;
+    margin-top: 50px;
   }
 
   .projects-wrap .project-img {
-    width: 220px;
-    height: 150px;
+    width: 280px;
+    height: 180px;
+  }
+
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none;
   }
 }

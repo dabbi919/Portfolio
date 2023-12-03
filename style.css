@@ -48,7 +48,6 @@ body {
   font-size: 70px;
   text-align: center;
   color: #eee;
-  /* background-color: #b7bbdd; */
 }
 
 .card {
@@ -284,6 +283,10 @@ body {
     max-width: 1000px;
   }
 
+  .swiper-slide > h2, .swiper-slide .skills h2, .swiper-slide .projects h2 {
+    font-size: 50px;
+  }
+
   .skills-wrap {
     width: 800px;
     display: grid;
@@ -317,24 +320,25 @@ body {
     transition: .2s;
   }
 
-  .swiper {
-    max-width: 600px;
-  }
-
   .slide-wrap {
     max-width: 400px;
-    height: auto;
+    height: 750px;
+    margin: auto;
+  }
+
+  .swiper-slide > h2, .swiper-slide .skills h2, .swiper-slide .projects h2 {
+    font-size: 40px;
   }
 
   .skills-wrap {
     width: 450px;
     max-width: 450px;
-    height: 620px;
+    height: 660px;
     display: grid;
     grid-template-columns: 2fr 2fr;
     place-items: center;
     padding: 10px;
-    margin-top: 50px;
+    margin-bottom: 20px;
   }
 
   .skills-wrap p {
@@ -354,17 +358,19 @@ body {
   .projects-wrap {
     width: 360px;
     max-width: 360px;
-    height: auto;
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
-    padding: 10px;
-    margin-top: 50px;
+    margin-top: -60px;
   }
 
   .projects-wrap .project-img {
-    width: 280px;
-    height: 180px;
+    width: 220px;
+    height: 135px;
+  }
+
+  .projects-wrap .project-img img {
+    width: 100%;
   }
 
   .swiper-button-prev::after, .swiper-button-next::after {

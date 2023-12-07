@@ -288,9 +288,9 @@ body {
   }
 
   .skills-wrap {
-    width: 800px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
     place-items: center;
     padding: 15px;
   }
@@ -346,9 +346,9 @@ body {
   }
 
   .skills-blob {
-    width: 125px;
-    max-width: 125px;
-    height: 145px;
+    width: 100px;
+    max-width: 100px;
+    height: 115px;
   }
 
   .skills-blob:hover {
